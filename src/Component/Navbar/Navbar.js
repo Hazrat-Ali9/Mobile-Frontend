@@ -11,7 +11,7 @@ const Navbar = () => {
     const navigate = useNavigate()
     return (
         <div className='bg-base-100  shadow-md'>
-// hazrat ali
+
             <div className="navbar container mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">

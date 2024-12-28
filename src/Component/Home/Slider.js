@@ -41,7 +41,7 @@ const Slider = () => {
                                             We Provide All Type Of Mobile Parts And Accessories
                                         </p>                                       
                                             <button className='btn' onClick={() => {
-                                                user ? navigate('/product') : navigate('/login')
+                                                user ? navigate('/product') : navigate('')
                                             }}>Get Started</button>
 
                                     </div>
