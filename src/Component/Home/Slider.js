@@ -16,7 +16,7 @@ const Slider = () => {
     ]
     // Slider Carosel
     return (
-        <div className='mb-12 mt-0 w-full h-[600px]'>
+        <div className='mb-12 mt-0 w-full h-[500px]'>
             <Swiper
                 loop={true}
                 autoplay={{
@@ -41,7 +41,7 @@ const Slider = () => {
                                             We Provide All Type Of Mobile Parts And Accessories
                                         </p>                                       
                                             <button className='btn' onClick={() => {
-                                                user ? navigate('/product') : navigate('')
+                                                user ? navigate('/product') : navigate('/login')
                                             }}>Get Started</button>
 
                                     </div>

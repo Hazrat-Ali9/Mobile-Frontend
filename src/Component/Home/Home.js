@@ -43,7 +43,7 @@ const Home = () => {
                         data?.slice(0, 4).map(product => <ProductCard key={product._id} product={product} />)
                     }
                 </div>
-                <div className='flex justify-center mt-10'><Link to='/product' className='btn btn-primary'>See All Product</Link></div>
+                <div className='flex justify-center mt-10'><Link to='/allproduct' className='btn btn-primary'>See All Product</Link></div>
             </div>
 
             <section className='container mx-auto mt-14'>

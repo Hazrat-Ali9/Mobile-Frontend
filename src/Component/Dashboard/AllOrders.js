@@ -123,7 +123,7 @@ const Orders = () => {
 
                                                             :
                                                             <>
-                                                                <Link to='/dashboard/payments' className="btn btn-primary mr-4">Paid</Link>
+                                                                <Link to='/dashboard/payments' className="btn btn-primary mr-4">Buy Now</Link>
                                                                 {/* <button onClick={() => {
                                                                     goForPay()
                                                                     setOrder(product)

@@ -29,6 +29,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Team from './Component/Team/Team';
 import Laptop from './Component/Dashboard/Laptop';
+import AllProduct from './Component/Product/AllProduct';
 function App() {
 // Apps JS
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="/laptop" element={<Laptop />} />
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/product' element={<Product />} />
+          <Route path='/allproduct' element={<AllProduct />} />
           <Route path='/product/:id' element={<RequireAuth>
             <ProductDetails />
           </RequireAuth>} />

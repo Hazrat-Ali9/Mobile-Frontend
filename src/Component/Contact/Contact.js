@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Lottie from 'lottie-react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
     const [contactData, setContactData] = useState(null);
 
-    // Declare useRef unconditionally
     const form = useRef();
 
     useEffect(() => {
@@ -23,15 +23,25 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_z6kxcgb','template_gk2kk89', form.current, {
+            .sendForm('service_z6kxcgb', 'template_gk2kk89', form.current, {
                 publicKey: 's3kd9otSruWkqhe9v',
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Your message has been sent successfully.',
+                        icon: 'success',
+                        confirmButtonText: 'OK',
+                    });
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    Swal.fire({
+                        title: 'Error!',
+                        text: `Failed to send the message. Error: ${error.text}`,
+                        icon: 'error',
+                        confirmButtonText: 'Try Again',
+                    });
                 }
             );
     };
@@ -39,20 +49,16 @@ const Contact = () => {
     return (
         <div className="mt-16 mx-auto">
             <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:text-gray-800">
-                {/* Left Column */}
                 <div className="flex flex-col justify-between h-full">
                     <div className="space-y-2">
                         <h2 className="text-4xl font-bold text-gray-300 leading-tight lg:text-5xl">Contact Us!</h2>
                         <div className="dark:text-gray-400">Have a question? Reach out, and we'll get back to you soon!</div>
                     </div>
-                    {/* Ensure Lottie animation takes full height and remains centered */}
                     <Lottie
-                        animationData={contactData} // Ensure this is valid Lottie data
+                        animationData={contactData}
                         className="h-48 md:h-64 lg:h-72 xl:h-80"
                     />
                 </div>
-
-                {/* Right Column (form) */}
                 <form ref={form} onSubmit={sendEmail} className="space-y-6">
                     <div>
                         <label htmlFor="name" className="text-sm dark:text-gray-200">Full name</label>
@@ -84,7 +90,6 @@ const Contact = () => {
                             className="w-full p-3 rounded dark:bg-gray-800 dark:text-gray-100 dark:border-gray-700"
                         ></textarea>
                     </div>
-                    {/* Removed the unnecessary submit input */}
                     <button
                         type="submit"
                         className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-blue-600 dark:text-gray-50"

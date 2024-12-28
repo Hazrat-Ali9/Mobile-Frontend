@@ -26,6 +26,7 @@
     "react-scripts": "5.0.1",
     "react-toastify": "^9.0.1",
     "styled-components": "^5.3.5",
+    "sweetalert2": "^11.15.3",
     "swiper": "^11.0.7",
     "web-vitals": "^2.1.0"
   },
