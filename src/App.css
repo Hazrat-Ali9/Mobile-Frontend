@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.product-order-page{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+.portdetails{
+    display: none;
+}
+#portCard:hover .portdetails{
+    display: block;
+}
+.overlay-modal{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.253);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.react-prog{
+    --value:70;
+    width: 60px;
+    height: 60px;
+    color: blueviolet;
+}
