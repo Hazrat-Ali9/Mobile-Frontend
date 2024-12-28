@@ -16,7 +16,7 @@ const Slider = () => {
     ]
     // Slider Carosel
     return (
-        <div className='mb-12 mt-0 w-full h-[500px]'>
+        <div className='mb-12 mt-0 w-full h-[600px]'>
             <Swiper
                 loop={true}
                 autoplay={{
@@ -36,12 +36,12 @@ const Slider = () => {
                                 <div className="hero-overlay bg-opacity-40"></div>
                                 <div className="hero-content text-neutral-content text-center">
                                     <div data-aos="flip-up" className="max-w-md">
-                                        <h1 className="mb-5 text-5xl font-medium">Hazrat Ali <br />  Mobile Mobile Shop</h1>
+                                        <h1 className="mb-5 text-5xl font-medium">Hazrat Ali <br /> Mobile Shop</h1>
                                         <p className="mb-5">
                                             We Provide All Type Of Mobile Parts And Accessories
                                         </p>                                       
                                             <button className='btn' onClick={() => {
-                                                user ? navigate('/product') : navigate('/login')
+                                                user ? navigate('') : navigate('')
                                             }}>Get Started</button>
 
                                     </div>
