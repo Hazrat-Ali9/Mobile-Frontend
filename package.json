@@ -29,7 +29,7 @@
     "sweetalert2": "^11.15.3",
     "swiper": "^11.0.7",
     "web-vitals": "^2.1.0"
-  }, 
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
