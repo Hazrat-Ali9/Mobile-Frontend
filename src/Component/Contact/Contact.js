@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Lottie from 'lottie-react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-
+// Contact js
 const Contact = () => {
     const [contactData, setContactData] = useState(null);
 
