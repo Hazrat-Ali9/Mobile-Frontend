@@ -8,4 +8,4 @@ module.exports = {
   },
   plugins: [require("daisyui")],
 }
-// Tailwind Config
+// tailwind config
