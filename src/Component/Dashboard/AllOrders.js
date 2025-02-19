@@ -7,7 +7,7 @@ import auth from '../Firebase/firebase.init'
 import Loading from '../Loading/Loading'
 import Payment from './Payment'
 import { Link } from 'react-router-dom'
-// add Order 
+// all orders 
 const Orders = () => {
     const url = `https://mobile-collections-backend.vercel.app/order/`
     const [show, setShow] = useState(false)
