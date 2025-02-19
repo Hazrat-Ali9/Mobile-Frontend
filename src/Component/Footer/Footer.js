@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// footer
+// Footer
 
 const Footer = () => {
   return (
