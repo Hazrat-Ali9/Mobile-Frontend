@@ -6,7 +6,7 @@ import { toast } from 'react-toastify'
 import auth from '../Firebase/firebase.init'
 import Loading from '../Loading/Loading'
 import Payment from './Payment'
-// orders js
+// Orders js
 const Orders = () => {
     const [user, loading] = useAuthState(auth)
     const url = `https://mobile-collections-backend.vercel.app/order/${user.email}`
