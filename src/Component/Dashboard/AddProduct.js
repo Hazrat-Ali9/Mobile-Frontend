@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 
-// Add product
+// Add Product
 
 const AddProduct = () => {
   const [error, setError] = useState('')
