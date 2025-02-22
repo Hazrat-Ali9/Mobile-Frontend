@@ -8,7 +8,7 @@ import {
   useElements,
 } from '@stripe/react-stripe-js';
 import { toast } from 'react-toastify';
-// Payment js
+// Payment JS
 const CheckoutForm = ({ order, clientSecret , setShow , refetch }) => {
   const date = useDate()
   const [loading , setLoading] = useState(false)
