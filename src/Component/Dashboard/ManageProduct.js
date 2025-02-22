@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useQuery } from 'react-query'
 import { toast } from 'react-toastify'
 import Loading from '../Loading/Loading'
-// manage product
+// Manage product
 const ManageProducts = () => {
   const [show, setShow] = useState(false)
   const [showDel, setshowDel] = useState(false)
