@@ -1,5 +1,5 @@
 import React from "react";
-// Porstfolio
+// Portfolio js
 const Portfolio = () => {
   return (
     <div className="container mx-auto  py-16">
