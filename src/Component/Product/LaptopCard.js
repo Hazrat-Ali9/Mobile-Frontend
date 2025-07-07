@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-
+// Laptop Card
 const LaptopCard = ({ product }) => {
     const { name, image, price, quantity, description, _id } = product;
     return (
