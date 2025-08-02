@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import auth from '../Firebase/firebase.init';
 import Loading from '../Loading/Loading';
-// Product
+// Order js
 const Order = ({ product, show, setShow }) => {
     const [error, setError] = useState('')
     const [user, userLoading] = useAuthState(auth)
