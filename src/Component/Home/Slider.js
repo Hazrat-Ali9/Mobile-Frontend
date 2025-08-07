@@ -36,7 +36,7 @@ const Slider = () => {
                                 <div className="hero-overlay bg-opacity-40"></div>
                                 <div className="hero-content text-neutral-content text-center">
                                     <div data-aos="flip-up" className="max-w-md">
-                                        <h1 className="mb-5 text-5xl font-medium"> Gadget <br />Galaxy </h1>
+                                        <h1 className="mb-5 text-5xl font-medium"> Gadget <br/> Galaxy </h1>
                                         <p className="mb-5">
                                             We Provide All Type Of Mobile Parts And Accessories
                                         </p>                                       
