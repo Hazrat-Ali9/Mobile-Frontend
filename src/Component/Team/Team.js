@@ -9,10 +9,10 @@ const Team = () => {
                     image={"/images/image.png"}
                     name={"Hazrat Ali"}
                 />
-                <TeamCard
+                {/* <TeamCard
                     image={"/images/mamber-2.jpeg"}
                     name={"Roma Akter"}
-                />
+                /> */}
                 <TeamCard
                     image={"/images/mamber-1.png"}
                     name={"Sahil Chowdhury"}
