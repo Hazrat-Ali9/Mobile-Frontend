@@ -1,13 +1,16 @@
 // Navbar js
 
 import React, { useState } from 'react'
+
 import { Link, NavLink, useNavigate } from 'react-router-dom'
+
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../Firebase/firebase.init';
 import { signOut } from 'firebase/auth';
 import person from '../Images/person.png'
 const Navbar = () => {
     const [user, loading] = useAuthState(auth)
+    //console.log(user.displayName)
     const navigate = useNavigate()
     return (
         <div className='bg-base-100  shadow-md'>
@@ -36,7 +39,7 @@ const Navbar = () => {
                             <div className="dropdown dropdown-end ">
                                 <label tabIndex={0} className={`${loading && "loading"} btn btn-ghost  btn-circle avatar`}>
                                     <div className="w-24 rounded-full ">
-                                        <img src={user ? user.photoURL : person} alt='amar-mata' />
+                                        <img src={user ? user.photoURL : person} alt='' />
                                     </div>
                                 </label>
                                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 border rounded-box w-52">
