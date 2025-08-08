@@ -46,7 +46,7 @@ const Home = () => {
                 <div className='flex justify-center mt-10'><Link to='/allproduct' className='btn btn-primary'>See All Product</Link></div>
             </div>
 
-            <section className='container mx-auto mt-14'>
+            {/* <section className='container mx-auto mt-14'>
 
                 <div className="shadow w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4" >
                     <div className="stat place-items-center">
@@ -81,7 +81,7 @@ const Home = () => {
                     </div>
                 
                 </div>
-            </section>
+            </section> */}
            
             <Contact />
         </div>
