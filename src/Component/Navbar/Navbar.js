@@ -85,7 +85,7 @@ const Navigations = (user) => {
                 </Link>
             </li>
             <li className='sticky '>
-                <Link className="text-gray-200" to="/products">
+                <Link className="text-gray-200" to="/allproduct">
                     Product
                 </Link>
                 <ul className="p-2">
